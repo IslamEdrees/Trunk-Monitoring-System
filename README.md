@@ -64,19 +64,19 @@ ssh-keygen -t rsa
 Copy the public key to the **Asterisk server**:
 
 ```bash
-ssh-copy-id root@192.168.50.92
+ssh-copy-id root@192.xx.xx.xx
 ```
 
 Or, if needed:
 
 ```bash
-ssh-copy-id -oHostkeyAlgorithms=+ssh-rsa -oPubkeyAcceptedAlgorithms=+ssh-rsa root@192.168.50.92
+ssh-copy-id -oHostkeyAlgorithms=+ssh-rsa -oPubkeyAcceptedAlgorithms=+ssh-rsa root@192.xx.xx.xx
 ```
 
 Test the connection:
 
 ```bash
-ssh -o HostKeyAlgorithms=+ssh-rsa -o PubkeyAcceptedAlgorithms=+ssh-rsa root@192.168.50.92
+ssh -o HostKeyAlgorithms=+ssh-rsa -o PubkeyAcceptedAlgorithms=+ssh-rsa root@192.xx.xx.xx
 ```
 
 ---
@@ -106,7 +106,7 @@ Create a monitoring script:
 ```bash
 #!/bin/bash
 
-ASTERISK_SERVER="192.168.xx.xx"
+ASTERISK_SERVER="192.xx.xx.xx"
 LOG_FILE="/var/log/trunks_status.log"
 TELEGRAM_BOT_TOKEN="<YOUR_BOT_TOKEN>"
 CHAT_ID="<YOUR_CHAT_ID>"
@@ -170,7 +170,7 @@ If you need to run the script **every 25 seconds**, use a `while true` loop insi
 ```bash
 #!/bin/bash
 
-ASTERISK_SERVER="192.168.50.92"
+ASTERISK_SERVER="192.xx.xx.xx"
 LOG_FILE="/var/log/trunks_status.log"
 TELEGRAM_BOT_TOKEN="<YOUR_BOT_TOKEN>"
 CHAT_ID="<YOUR_CHAT_ID>"
