@@ -203,12 +203,8 @@ pkill -f check_trunks.sh
 ```
 
 ---
+![image](https://github.com/user-attachments/assets/8a453c5d-ff41-42f5-b7f0-de1f5a6cbd52)
 
-## License
-This project is open-source and available under the **MIT License**.
-
-## Contributions
-Feel free to contribute by submitting a pull request or reporting issues.
 
 ---
 
